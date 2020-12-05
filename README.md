@@ -27,3 +27,9 @@ DB_PASSWORD=password
 TEST_YII_ENV=test
 TEST_DB_DSN=mysql:host=localhost;dbname=dbname
 ~~~
+
+Выполнить:
+
+~~~
+yii migrate
+~~~
