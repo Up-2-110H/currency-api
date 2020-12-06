@@ -9,5 +9,5 @@ use yii\test\ActiveFixture;
 
 class CurrencyFixture extends ActiveFixture
 {
-    public string $modelClass = 'app\models\Currency';
+    public $modelClass = 'app\models\Currency';
 }

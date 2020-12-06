@@ -10,8 +10,7 @@
 
 require __DIR__ . '/../../vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__ . "/../..");
-$dotenv->load();
+require_once __DIR__ . '/../../config/env.php';
 
 // comment out the following two lines when deployed to production
 defined('YII_DEBUG') or define('YII_DEBUG', (bool) getenv('YII_DEBUG'));

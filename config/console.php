@@ -26,6 +26,12 @@ $config = [
             ],
         ],
         'db' => $db,
+        /*'request' => [
+            'parsers' => [
+                'text/xml' => 'light\yii2\XmlParser',
+                'application/xml' => 'light\yii2\XmlParser',
+            ],
+        ],*/
     ],
     'params' => $params,
     /*

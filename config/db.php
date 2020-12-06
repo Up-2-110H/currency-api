@@ -1,7 +1,7 @@
 <?php
 
-$dotenv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__ . "/..");
-$dotenv->load();
+
+require_once __DIR__ . '/../config/env.php';
 
 return [
     'class' => 'yii\db\Connection',
