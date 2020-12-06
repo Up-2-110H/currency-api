@@ -43,6 +43,16 @@ class Currency extends \yii\db\ActiveRecord
         ];
     }
 
+    public function fields()
+    {
+        return [
+            'id',
+            'name',
+            'rate',
+            'insert_dt'
+        ];
+    }
+
     /**
      * {@inheritdoc}
      */
