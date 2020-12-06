@@ -1,5 +1,7 @@
 <?php
 
+namespace app\migrations;
+
 use yii\db\Migration;
 
 /**
@@ -16,7 +18,7 @@ class m201205_115938_create_currency_table extends Migration
             'id' => $this->primaryKey(),
             'name' => $this->string()->notNull()->unique(),
             'rate' => $this->double()->notNull(),
-            'insert_dt' => $this->dateTime()->notNull(),
+            'insert_dt' => $this->timestamp()->notNull()->defaultExpression('CURRENT_TIMESTAMP'),
         ]);
     }
 
