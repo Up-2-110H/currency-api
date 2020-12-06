@@ -26,10 +26,41 @@ DB_PASSWORD=password
 
 TEST_YII_ENV=test
 TEST_DB_DSN=mysql:host=localhost;dbname=dbname
+
+# PARSING DATA
+PARSE_URL=http://www.cbr.ru/scripts/XML_daily.asp
 ~~~
 
 Выполнить:
 
 ~~~
 yii migrate
+~~~
+
+Тестирование
+------------
+
+~~~
+vendor/bin/codecept run
+~~~
+
+Использование
+------------
+
+Обновление данных в бд по PARSE_URL
+~~~
+yii currency
+или
+yii currency/update
+~~~
+
+Получение списка курсов валют
+~~~
+GET /currencies
+GET /currencies/:page_num
+~~~
+
+Получение курса валюты по его id
+~~~
+GET /currency/:id
 ~~~
